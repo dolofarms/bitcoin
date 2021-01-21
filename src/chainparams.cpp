@@ -99,11 +99,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xf9;
-        pchMessageStart[1] = 0xbe;
-        pchMessageStart[2] = 0xb4;
-        pchMessageStart[3] = 0xd9;
-        nDefaultPort = 8333;
+        pchMessageStart[0] = 0xe6;
+        pchMessageStart[1] = 0xb8;
+        pchMessageStart[2] = 0xed;
+        pchMessageStart[3] = 0xdb;
+        nDefaultPort = 7333;
         nPruneAfterHeight = 100000;
         m_assumed_blockchain_size = 350;
         m_assumed_chain_state_size = 6;
@@ -128,9 +128,9 @@ public:
         vSeeds.emplace_back("dnsseed.emzy.de"); // Stephan Oeste
         vSeeds.emplace_back("seed.bitcoin.wiz.biz"); // Jason Maurice
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(c,0);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(c,5);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(c,128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
 
@@ -207,11 +207,11 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000001db6ec4ac88cf2272c6");
         consensus.defaultAssumeValid = uint256S("0x000000000000006433d1efec504c53ca332b64963c425395515b01977bd7b3b0"); // 1864000
 
-        pchMessageStart[0] = 0x0b;
-        pchMessageStart[1] = 0x11;
-        pchMessageStart[2] = 0x09;
-        pchMessageStart[3] = 0x07;
-        nDefaultPort = 18333;
+        pchMessageStart[0] = 0x95;
+        pchMessageStart[1] = 0x87;
+        pchMessageStart[2] = 0xf2;
+        pchMessageStart[3] = 0x97;
+        nDefaultPort = 17333;
         nPruneAfterHeight = 1000;
         m_assumed_blockchain_size = 40;
         m_assumed_chain_state_size = 2;
@@ -229,9 +229,9 @@ public:
         vSeeds.emplace_back("seed.testnet.bitcoin.sprovoost.nl");
         vSeeds.emplace_back("testnet-seed.bluematt.me"); // Just a static list of stable node(s), only supports x9
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(c,111);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(c,196);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(c,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
@@ -351,9 +351,9 @@ public:
 
         vFixedSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(c,111);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(c,196);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(c,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
@@ -437,9 +437,9 @@ public:
             0
         };
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(c,111);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(c,196);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(c,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
